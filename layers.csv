@@ -1,0 +1,17 @@
+conv_layers
+in_channels,out_channels,kernel_size,stride,padding,pooling(0/1/2)
+3,128,3,1,1,0
+128,128,3,1,1,1
+128,256,3,1,1,0
+256,256,3,1,1,1
+256,512,3,1,1,0
+512,512,3,1,1,1
+
+fc_layers
+in_features,out_features,activation(0/1)
+8192,1024,1
+1024,10,0
+
+resnet_blocks
+block_type(0/1),num_block1,num_block2,num_block3,num_block4
+0,2,2,2,2
