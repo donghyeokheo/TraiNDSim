@@ -121,7 +121,7 @@ print()
 
 print("--------------------- Hyperparameters --------------------")
 print(f"seed: {args.seed} \nbatch size: {args.batch_size}")
-print(f"batch normalization: {arg.batch_normalization}")
+print(f"batch normalization: {args.batch_normalization}")
 print(f"optimizer: {args.optimizer} \nloss function: {args.loss} \nepochs: {args.epochs}")
 print(f"learning rate: {args.learning_rate} \nlearning rate decay: {args.lr_decay}")
 print(f"learning rate decay scale: {args.lr_decay_scale} \nweight decay: {args.weight_decay}")
