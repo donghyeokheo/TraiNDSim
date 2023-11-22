@@ -17,7 +17,7 @@ def kaiming_uniform_init(weight, factor=2.0):
         fan_in = weight.size(1)
     elif weight.dim() == 4:
         num_IFMs = weight.size(1)
-        kernel_field_size = torch.prod(torch.tensor(weight[0].size()[1:4]))
+        kernel_field_size = torch.prod(torch.tensor(weight[0].size()[1:3]))
         fan_in = num_IFMs * kernel_field_size
     else:
         raise NotImplementedError("Supporting only 2d, 4d weights")
